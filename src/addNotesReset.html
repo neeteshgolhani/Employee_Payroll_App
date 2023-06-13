@@ -81,7 +81,6 @@
             max="500000" step="100" value="400000">
      <output class="salary-output text" for="salary">400000</output>
  </div>    
-</form>
 </div>
 <script>
  const salary = document.querySelector('#salary');
@@ -91,7 +90,7 @@
  output.textContent = salary.value;
  });
 </script>
-
+<!--uc5-->>
 <label for="start-date">Start Date:</label>
 <select id="day" name="day">
   <option value="">Day</option>
@@ -106,7 +105,13 @@
   <!-- Add options for years here -->
 </select>
   <br><br>
-  <input type="submit" value="Submit">
-</body>
+  <label for="notes">Notes:</label>
+  <textarea id="notes" name="notes"></textarea>
+  <div>
+    <input type="button" value="Cancel">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
 </body>
 </html>
